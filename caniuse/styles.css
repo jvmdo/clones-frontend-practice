@@ -1,0 +1,530 @@
+/* Reset CSS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+nav,
+main,
+aside,
+footer,
+header,
+section {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* General */
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #ffffffba;
+  min-width: 32rem;
+  max-width: 140rem;
+  padding: 0.5rem;
+  background-image: url(caniuse-bg-dark.png);
+}
+
+a:link {
+  color: #d4943a;
+}
+
+li {
+  padding-bottom: 8px;
+}
+
+/* Header */
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: start;
+}
+
+header nav a[href="/nft"]:link {
+  all: initial;
+  display: none;
+}
+
+header a:link {
+  color: #ffffffba;
+  background-color: #ffffff1a;
+  font-weight: lighter;
+  padding: 1rem;
+}
+
+header a:focus {
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+header a:hover {
+  background-color: #ad6500;
+}
+
+header nav li {
+  display: inline-block;
+}
+
+header div {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-align: center;
+  background-color: #833502;
+  margin: 1.6rem auto 0;
+  padding: 1.2rem 0;
+}
+
+header div input {
+  width: 55%;
+  border-bottom: 1px solid;
+}
+
+header button {
+  padding: 0 0 5px 5px;
+}
+
+header button svg path {
+  fill: #ffffffba;
+}
+
+/* Main */
+main div {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  margin: 1.6rem auto 0;
+}
+
+main > div a:link {
+  flex: 1;
+  text-align: center;
+  color: #ffffffba;
+}
+
+main > div > * {
+  background-color: #ffffff1a;
+  padding: 0.8rem 1rem;
+}
+
+main > div > *:hover {
+  background-color: #833502;
+}
+
+main > div span {
+  padding-left: 4px;
+}
+
+main > div svg path {
+  fill: #ffffffba;
+}
+
+main article {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.2rem;
+  margin: 1.8rem 0 0;
+}
+
+main article h3 {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  color: #ffffffba;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ffffff33;
+  margin-bottom: 2.2rem;
+}
+
+main article ul,
+ol {
+  padding: 0 2.2rem 0;
+  color: #cfb78b;
+}
+
+main article ul {
+  list-style-type: square;
+}
+
+main article ol li {
+  padding-left: 2px;
+}
+
+main article section p + div {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+main section button[name="next"] {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  float: right;
+  background-color: #ffffff1a;
+  padding: 0.3rem 1rem;
+}
+
+main section a[href="p6"] {
+  display: inline-block;
+  margin: 1rem 0 2rem;
+}
+
+main section button[name^="ver"] {
+  color: #888888;
+  background-color: #ffffff1a;
+  font-size: 1.4rem;
+  margin: 0 0 2rem;
+  padding: 1px 6px;
+}
+
+main section button[name^="ver"]:active {
+  background-color: #654600;
+}
+
+main section button + ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+main section button + ul li {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0.8rem;
+}
+
+main section button + ul li span {
+  padding: 0rem 0.2rem;
+}
+
+main section button + ul li:nth-child(1) {
+  width: 90%;
+  background-color: #1b44758b;
+}
+
+main section button + ul li:nth-child(1) span {
+  display: inline-block;
+  width: 93.6%;
+  color: #ffffffba;
+  background-color: #1b4475;
+}
+
+main section button + ul li:nth-child(2) {
+  width: 85%;
+  background-color: #6139108b;
+}
+
+main section button + ul li:nth-child(2) span {
+  display: inline-block;
+  width: 94.4%;
+  color: #ffffffba;
+  background-color: #613910;
+}
+
+main section button + ul li:nth-child(3) {
+  width: 82%;
+  background-color: #4141418b;
+}
+
+main section button + ul li:nth-child(3) span {
+  display: inline-block;
+  width: 90.9%;
+  color: #ffffffba;
+  background-color: #414141;
+}
+
+main section a[href="s1"] {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 1rem 0 5.4rem;
+  color: #db8000;
+}
+
+/* Footer */
+footer {
+  padding: 0 0.5rem;
+  border-top: 2px solid #ffffff33;
+}
+
+footer section > * {
+  margin-bottom: 1.4rem;
+  font-size: 1.4rem;
+  color: #cfb78b;
+}
+
+footer h2 {
+  margin: 2.4rem 0 1.4rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #ffffffba;
+}
+
+footer section:first-of-type p:first-of-type {
+  color: #ffffff66;
+}
+
+footer section a[href="ft6"] img {
+  width: 12rem;
+  padding-left: 0.5rem;
+}
+
+footer section a[href="ft7"] {
+  display: inline-block;
+  width: 16rem;
+}
+
+footer section ul {
+  list-style-type: none;
+}
+
+footer section:last-of-type span {
+  display: inline-block;
+  line-height: 0.8;
+  width: 25px;
+  height: 1.25rem;
+  text-indent: -9999px;
+}
+
+footer section ul {
+  line-height: 2;
+}
+
+footer section ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer section ol li {
+  line-height: 2.5;
+  font-size: 1.2rem;
+}
+
+footer section:last-of-type ol li:nth-child(1) span {
+  background-color: #39b54a;
+}
+
+footer section:last-of-type ol li:nth-child(2) span {
+  background-color: #c44230;
+}
+
+footer section:last-of-type ol li:nth-child(3) span {
+  background-color: #807301;
+}
+footer section:last-of-type ol li:nth-child(4) span {
+  background-color: #757575;
+}
+
+footer section a[href="l1"] {
+  font-size: 1.2rem;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 401px) {
+  header nav a[href*="compare"]::after {
+    content: " Browsers";
+  }
+
+  main article:first-of-type {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+@media screen and (min-width: 512px) {
+  main > div a[href*="features"] {
+    text-align: left;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 1rem;
+  }
+
+  footer section h2 {
+    font-size: 1.6rem;
+  }
+
+  footer section ol li {
+    line-height: 2;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  body {
+    padding: 1rem 1.6rem;
+  }
+
+  header nav a {
+    font-size: 2rem;
+  }
+
+  header label {
+    font-size: 2.4rem;
+  }
+
+  main article:first-of-type {
+    margin-bottom: 4.4rem;
+  }
+
+  main article section p + div {
+    flex-direction: row;
+  }
+
+  footer section a[href="ft6"] img {
+    width: 14rem;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  header input[type="text"] {
+    width: 50%;
+  }
+
+  header button::after {
+    content: "Settings";
+    margin-left: 8px;
+    color: #ffffffb3;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 736px) {
+  main section h3 {
+    font-size: 2.2rem;
+  }
+
+  footer {
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 752px) {
+  body {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    padding-top: 0;
+  }
+
+  header nav a:link {
+    padding: 1.1rem 1.4rem;
+    line-height: 1.5;
+  }
+
+  header div {
+    padding: 2rem;
+  }
+
+  header div label {
+    font-size: 2.8rem;
+  }
+
+  header nav a[href="/nft"]:link {
+    display: unset;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.8rem;
+    font-family: inherit;
+    font-weight: lighter;
+    color: inherit;
+    padding: 0 1rem;
+    margin-top: 0.45rem;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  header nav a[href="/nft"]:focus {
+    border: 1px solid;
+    border-radius: 5px;
+  }
+
+  header nav a[href="/nft"]:hover {
+    color: #ad6500;
+  }
+
+  header nav a span {
+    color: #ffffff66;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  main article:first-of-type {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main article section p + div {
+    flex-direction: column;
+  }
+
+  main article:last-of-type {
+    display: inline-flex;
+  }
+
+  main > div a,
+  button {
+    padding: 1rem 3rem;
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1056px) {
+  header div label {
+    font-size: 4rem;
+  }
+
+  header div button {
+    padding: 0 1rem;
+  }
+
+  header div button::after {
+    font-size: 2.4rem;
+  }
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My caniuse.com Clone</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/#">Home</a></li>
+          <li><a href="/news">News</a></li>
+        </ul>
+        <a href="/nft"
+          ><span>September 4, 2022 -</span> New Feature: WebCodecs API</a
+        >
+        <ul>
+          <li><a href="/compare">Compare</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <label for="caniuse">Can I use</label>
+        <input type="text" name="caniuse" />
+        <label for="caniuse">?</label>
+        <button type="button" name="cog">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16,8.87V7L15.74,7l-1.95-.64-.52-1.25,1-2.12L13,1.67l-.25.12-1.82.93L9.66,2.2,8.87,0H7.05L7,.26,6.33,2.21l-1.25.52L3,1.73,1.67,3l.12.25.93,1.82L2.2,6.34,0,7.13V8.95L.26,9l2,.64.52,1.25L1.73,13,3,14.33l.25-.12,1.82-.93,1.26.52L7.13,16H8.95L9,15.74l.64-2,1.26-.52,2.11,1L14.33,13l-.12-.25-.93-1.82.52-1.26ZM8,10.55A2.55,2.55,0,1,1,10.55,8,2.55,2.55,0,0,1,8,10.55Z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <a href="/features">Index of features</a>
+        <button type="button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+          >
+            <path d="M21 4L21 6 20 6 14 15 14 22 10 22 10 15 4 6 3 6 3 4z" />
+          </svg>
+          <span>Filter features</span>
+        </button>
+      </div>
+
+      <article>
+        <section>
+          <h3>Latest features</h3>
+          <ul>
+            <li><a href="f1">WebCodecs API</a></li>
+            <li><a href="f2">WebTransport</a></li>
+            <li><a href="f3">Media Queries: Range Syntax</a></li>
+            <li><a href="f4">CSS Container Query Units</a></li>
+            <li><a href="f5">Declarative Shadow DOM</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Most searched features</h3>
+          <ol>
+            <li><a href="m1">CSS Grid</a></li>
+            <li><a href="m2">Flexbox</a></li>
+            <li><a href="m3">WebP Image Format</a></li>
+            <li><a href="m4">gap property for Flexbox</a></li>
+            <li><a href="m5">ES6</a></li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>Test a feature</h3>
+          <p>
+            Our partnership with
+            <a href="https://www.browserstack.com/"> BrowserStack </a>
+            now lets you test your site for compatibility across 2,000+ real
+            browser and devices.
+          </p>
+          <br />
+          <p>Test on:</p>
+          <div>
+            <ul>
+              <li><a href="t1">IE 11</a></li>
+              <li><a href="t2">Safari 13</a></li>
+            </ul>
+            <ul>
+              <li><a href="t3">Safari on iPhone 11 Pro</a></li>
+              <li><a href="t4">Chrome on Galaxy S20</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h3>Did you know?</h3>
+          <p>
+            Usage data for all countries and continents can be imported via the
+            <strong>Settings Panel</strong>.
+          </p>
+          <button type="button" name="next">Next</button>
+        </section>
+      </article>
+
+      <article>
+        <section>
+          <h3>Third party tools</h3>
+          <ul>
+            <li>
+              <a href="p1"
+                >The CanIUse Embed - Add support tables to your website</a
+              >
+            </li>
+            <li>
+              <a href="p2"
+                >Caniuse Component - Add support tables to your presentations</a
+              >
+            </li>
+            <li><a href="p3">Caniuse command line tool</a></li>
+            <li>
+              <a href="p4"
+                >Doiuse...? - Lint your CSS to check what features work</a
+              >
+            </li>
+            <li>
+              <a href="p5"
+                >I want to use - Select multiples features and see what % of
+                users can use them</a
+              >
+            </li>
+          </ul>
+          <a href="p6">See full list</a>
+        </section>
+
+        <section>
+          <h3>Browser scores</h3>
+          <br />
+          <button type="button" name="ver cur">Current version</button>
+          <button type="button" name="ver dev">Dev version</button>
+          <ul>
+            <li><span>Chrome 105: 395</span></li>
+            <li><span>Firefox 104: 373</span></li>
+            <li><span>Safari 15.6: 351</span></li>
+          </ul>
+          <a href="s1">About these scores</a>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <section>
+        <h2>Can I use...</h2>
+        <p>Browser support tables for modern web technologies</p>
+        <p>
+          Created and maintained by <a href="ft1">@Fyrd</a>, design by
+          <a href="ft2">@Lensco</a>.
+        </p>
+        <p>
+          Support data contributions by the GitHub <a href="ft3">community</a>.
+        </p>
+        <p>
+          Usage share statistics by
+          <a href="ft4">StatCounter GlobalStats</a> for August, 2022
+        </p>
+        <p>Location detection provided by <a href="ft5">ipinfo.io</a>.</p>
+        <p>
+          Browser testing done via
+          <a href="ft6"><img src="browserstack.svg" alt="BroswerStack" /></a>
+        </p>
+      </section>
+
+      <section>
+        <h2>Support via Patreon</h2>
+        <p>Become a caniuse Patron to support the site for only $1/month!</p>
+        <a href="ft7">
+          <img src="patron.png" alt="Become a patron" />
+        </a>
+        <p>or <a href="ft8">Log in</a></p>
+      </section>
+
+      <section>
+        <h2>Site links</h2>
+        <ul>
+          <li><a href="sl1">Home</a></li>
+          <li><a href="sl2">Feature index</a></li>
+          <li><a href="sl3">Browser usage table</a></li>
+          <li><a href="sl4">Feature suggestion list</a></li>
+          <li><a href="sl5">Caniuse data on GitHub</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Legend</h2>
+        <ol>
+          <li><span>Green</span> = Supported</li>
+          <li><span>Red</span> = Not supported</li>
+          <li><span>Dark green</span> = Partial support</li>
+          <li><span>Grey</span> = Support unknown</li>
+        </ol>
+        <p><a href="l1">Enable color-blind friendly colors</a></p>
+      </section>
+    </footer>
+  </body>
+</html>
